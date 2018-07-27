@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Crimson+Text" rel="stylesheet">
+	<title>Make your own custom cursor!</title>
+</head>
+<body>
+	<main>
+		<section class="start">
+			<div class="wrapper">
+				<div class="next intro">
+					<a href="#step1">
+						<h2>hover.</h2>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="step1">
+			<div class="wrapper">
+				<!-- <div class="next"> -->
+					<a href="#step2">
+						<h2>step one</h2>
+					</a>
+				<!-- </div> -->
+				<p>Draw your cursor on pen and paper and scan or upload a photo of it.</p>
+				<img src="assets/frenchieOutline.jpg" alt="">
+			</div>
+		</section>
+		<section id="step2">
+			<div class="wrapper">
+				<!-- <div class="next"> -->
+					<a href="#step3">
+						<h2>step two</h2>
+					</a>
+				<!-- </div> -->
+				<p>Open up in Adobe Illustrator and make a new document. Maximum height and width 128x128px. Place (shift + ctrl + p) your image onto your artboard.</p>
+				<img src="assets/step2.jpg" alt="">
+			</div>
+		</section>
+		<section id="step3">
+			<div class="wrapper">
+				<!-- <div class="next"> -->
+					<a href="#step4">
+						<h2>step three</h2>
+					</a>
+				<!-- </div> -->
+				<p>Use Image Trace > Sketched Art to create a vector outline, then add color using the pen tool and layers.</p>
+				<img src="assets/step3.jpg" alt="">
+				<img src="assets/step3.gif" alt="">
+			</div>
+		</section>
+		<section id="step4">
+			<div class="wrapper">
+				<!-- <div class="next"> -->
+					<a href="#step5">
+						<h2>step four</h2>
+					</a>
+				<!-- </div> -->
+				<p>Save your file as a png or svg. Go to File > Export > Export As ... Make sure you save it in your project's assets folder.</p>
+				<img src="assets/step4.jpg" alt="">
+			</div>
+		</section>
+		<section id="step5">
+			<div class="wrapper">
+				<!-- <div class="next"> -->
+					<a href="#finish">
+						<h2>step five</h2>
+					</a>
+				<!-- </div> -->
+				<p>Now your cursor is ready to use! In your CSS file, use the "cursor" property to add your custom cursor image.
+				</p>
+					<div class="code">
+						<a href="#codeImage">
+							<h3>element<br>{ cursor: url(myCustomCursor.png), auto; }
+							</h3>
+						</a>
+					</div>
+				</div><!--code-->
+			</div>
+			<img id="codeImage" src="assets/step5.jpg" alt="">
+		</section>
+		<section id="finish">
+			<div class="wrapper">
+				<div class="next hover">
+					<h2>hover.</h2>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+	
+	<script>
+		$(function(){
+			$('a').smoothScroll();			
+		});
+
+
+		$("img").click(function() {
+		   $(this).attr('width', '1920');
+		    $(this).attr('height', '1030');
+		});
+
+		// 1920 x 1030
+	</script>
+
+	
+</body>
+</html>
